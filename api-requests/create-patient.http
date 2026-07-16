@@ -4,9 +4,9 @@ POST http://localhost:8080/api/patients/create
 Content-Type: application/json
 
 {
-  "name": "Asif",
-  "email":"asif@universe.com",
+  "name": "Danish",
+  "email":"danish@universe.com",
   "address": "Pune",
-  "dateOfBirth": "2009-06-15",
-  "registeredDate": "2026-07-10"
+  "dateOfBirth": "2009-09-15",
+  "registeredDate": "2026-07-16"
 }

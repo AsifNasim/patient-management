@@ -24,7 +24,7 @@ public class PatientRequestDTO {
     @NotBlank(message = "Date of Birth should be a valid one")
     private String dateOfBirth;
 
-    @NotBlank(groups = CreatePatientValidationGroup.class, message = "registered Date should be a valid one")
+    @NotBlank(groups = CreatePatientValidationGroup.class, message = "registered Date is required")
     private String registeredDate;
 
     public @NotBlank(message = "Name is required") @Size(max = 100, message = "Name cannot exceeds 100 characters") String getName() {

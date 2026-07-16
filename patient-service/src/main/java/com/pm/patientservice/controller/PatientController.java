@@ -40,4 +40,5 @@ public class PatientController {
     public ResponseEntity<PatientResponseDTO> updatePatient(@PathVariable UUID id, @Validated({Default.class}) @RequestBody PatientRequestDTO patientRequestDTO){
          return  ResponseEntity.ok().body(patientService.updatePatient(id, patientRequestDTO));
      }
+
 }
