@@ -1,0 +1,13 @@
+### GET request to example server
+PUT http://localhost:8080/api/patients/update/798360d8-323d-4b36-b3f3-ca033d677dd4
+Content-Type: application/json
+
+{
+  "name": "Asif",
+  "email":"",
+  "address": "Delhi",
+  "dateOfBirth": "2009-06-15",
+  "registeredDate": "2026-07-10"
+}
+
+###
