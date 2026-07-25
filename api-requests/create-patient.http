@@ -1,12 +1,12 @@
 #### GET request to example server
 #
-POST http://localhost:8080/api/patients/create
+POST http://localhost:4000/api/patients/create
 Content-Type: application/json
 
 {
-  "name": "Danish",
-  "email":"danish@universe.com",
-  "address": "Pune",
-  "dateOfBirth": "2009-09-15",
-  "registeredDate": "2026-07-16"
+  "name": "Faisal",
+  "email":"faisal@universe.com",
+  "address": "Canada",
+  "dateOfBirth": "2009-09-25",
+  "registeredDate": "2026-07-13"
 }
