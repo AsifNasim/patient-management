@@ -32,6 +32,7 @@ public class BillingServiceGrpcClient {
 
     public BillingResponse createBillingAccount(String patientId, String name, String email){
 
+//        creating and serializing into binary
         BillingRequest request = BillingRequest.newBuilder().setPatientId(patientId)
                 .setName(name).setEmail(email).build();
 
