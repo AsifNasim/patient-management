@@ -1,0 +1,24 @@
+server:
+  port: 4004
+
+spring:
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+            - id: patient-service-route
+              uri: http://patient-service:4000
+#              what is allowed  to pass through the gateway and to which microservice
+              predicates:
+                - Path=/api/patients/**
+              filters:
+#                it means it will ignore and strip the first part of the path for example "/api"
+#                - StripPrefix=1
+
+            - id: api-docs-patient-route
+              uri: http://patient-service:4000
+              predicates:
+                - Path=/api-docs/patients
+              filters:
+                - RewritePath=/api-docs/patients,/v3/api-docs
