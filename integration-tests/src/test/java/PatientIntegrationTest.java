@@ -1,5 +1,4 @@
 import io.restassured.RestAssured;
-import io.restassured.response.Response;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -16,9 +15,6 @@ public class PatientIntegrationTest {
 
     @Test
     public void shouldReturnPatientsWithValidToken(){
-
-//        Arrange
-//        eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlckB0ZXN0LmNvbSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc4NzI5NTc3NCwiZXhwIjoxNzg3MzMxNzc0fQ.oYqOfZcGqOZeWtE6mXaASBXUZqz5DLi4kNkkjHuw1oo
 
 //        Arrange - arrange any setup that this test is required, to make the setup work 100%
 
